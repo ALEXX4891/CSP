@@ -1,0 +1,163 @@
+.calculating__right .calculating__fields {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.calculating__right .result .btn {
+  margin: 0;
+}
+.calculating__right .result .table {
+  margin: 0;
+}
+.calculating__right .result .wrap {
+  gap: 15px;
+  margin: 0;
+}
+.calculating__main-info {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+.calculating__fields {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+}
+.calculating__fields .btn {
+  margin: 0px;
+}
+.calculating__fields-left {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+}
+.calculating__field-title {
+  color: rgb(34, 34, 34);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 110%;
+}
+.calculating__field-text {
+  color: rgb(34, 34, 34);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 110%;
+}
+.calculating__bottom {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+}
+.calculating__bottom .btn-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+.calculating__bottom .btn {
+  margin: 0px;
+}
+.calculating__bottom .popup__btn-wrapper {
+  display: flex;
+  gap: 16px;
+}
+.calculating__title {
+  text-transform: uppercase;
+}
+.calculating .btn-wrapper_table {
+  width: 100%;
+  justify-content: center;
+}
+.calculating .table {
+  margin-bottom: 10px;
+}
+.calculating .table .table__column {
+  padding: 8px;
+}
+.calculating .table .table__column_1 {
+  width: 7.5%;
+}
+.calculating .table .table__column_2 {
+  width: 27.8%;
+  text-align: center;
+}
+.calculating .table .table__column_3 {
+  width: 27.8%;
+  text-align: center;
+}
+.calculating .table .table__column_4 {
+  width: 27.8%;
+  text-align: center;
+}
+.calculating .table .table__column_5 {
+  width: 9.1%;
+  text-align: center;
+}
+.calculating .table .table__column_5 svg {
+  cursor: pointer;
+}
+.calculating .table .table__cell-frame {
+  text-align: center;
+}
+.calculating__availability {
+  align-items: start;
+  gap: 16px;
+}
+.calculating__availability .table {
+  max-width: 794px;
+  width: 104%;
+}
+.calculating__availability .table .table__column_1 {
+  width: 4.2%;
+  text-align: start;
+}
+.calculating__availability .table .table__column_2 {
+  max-width: 14.2%;
+  text-align: center;
+}
+.calculating__availability .table .table__column_3 {
+  width: 13.7%;
+  text-align: center;
+}
+.calculating__availability .table .table__column_4 {
+  width: 13.2%;
+  text-align: center;
+}
+.calculating__availability .table .table__column_5 {
+  width: 11.7%;
+  text-align: center;
+}
+.calculating__availability .table .table__column_6 {
+  width: 16%;
+  text-align: center;
+}
+.calculating__availability .table .table__column_7 {
+  width: 12.4%;
+  text-align: center;
+}
+.calculating__availability .table .table__column_8 {
+  width: 14.7%;
+  text-align: center;
+}
+.calculating__checkbox {
+  margin-bottom: 15px;
+}
+.calculating__variant {
+  margin-bottom: 25px;
+}
+.calculating__variant .variant__table-wrapper {
+  max-width: 906px;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 9px;
+}

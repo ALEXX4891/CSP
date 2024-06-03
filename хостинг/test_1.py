@@ -1,3 +1,4 @@
+
 # a = 5 # int
 # b = 5.6 # float
 # c = 'ALEXX' # str
@@ -31,8 +32,8 @@
 
 # Импортируем необходимые библиотеки
 
-# import os, sys # для работы с путями на хостинге!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-# sys.path.append('/home/w/wwserver/.local/lib/python3.11/site-packages') # для работы с путями на хостинге!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+import os, sys
+sys.path.append('/home/w/wwserver/.local/lib/python3.11/site-packages')
 
 
 from ortools.linear_solver import pywraplp
@@ -42,6 +43,8 @@ import random
 import pickle
 import json
 import datetime
+
+#except Exception as e: print(e)
 
 # import time
 # json = json.dumps('result')
@@ -166,7 +169,7 @@ def cutting_stock_relaxed(A, q, is_relaxed=True):
 
     solution = {f"x_{i}": var.solution_value()
                 for i, var in enumerate(x_vars)
-                if var.solution_value() }
+               if var.solution_value() }
 
     # print('--solution:', solution)
     # print('--solution.keys():', solution.keys())
@@ -187,6 +190,7 @@ def cutting_stock_relaxed(A, q, is_relaxed=True):
     # usingShems = []
     # for i in range(len(indexShems)):
     #    usingShems.append(C)
+       
 
     # print('--solution--:', solution[1])
     solution_vect = np.array([var.solution_value() for var in x_vars])

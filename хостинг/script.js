@@ -1,7 +1,7 @@
 const btn = document.getElementById("btn");
 
-let cspResponce;
-let scpRes;
+let responce;
+let infoList;
 
 function getParams() {
   let data = [];
@@ -33,19 +33,19 @@ function getParams() {
   return data;
 }
 
-async function CalcCSP(data) {
+async function fetchToDB(data) {
   // Блок try выполнится полностью, если не будет ошибок:
   try {
     // Выполняем запрос:
-    cspResponce = await fetch("test.php", {
+    responce = await fetch("test.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
     });
-    scpRes = await cspResponce.json();
-    return scpRes; // Возвращаем результат запроса
+    infoList = await responce.json();
+    return infoList; // Возвращаем результат запроса
   } catch (err) {
     // Блок catch сработает только если будут какие-то ошибки в блоке try:
     // Выведем в консоли информацию об ошибке:
@@ -60,16 +60,16 @@ async function CalcCSP(data) {
 btn.addEventListener("click", async function (e) {
   e.preventDefault();
   const data = getParams();
-  await CalcCSP(data);
+  await fetchToDB(data);
   
-  console.log(scpRes[0]);
-  console.log(scpRes[1]);
+  console.log(infoList[0]);
+  console.log(infoList[1]);
   let div1 = document.createElement("div");
   let div2 = document.createElement("div");
-  div1.textContent = scpRes[0];
-  for (let i = 0; i < scpRes[1].length; i++) {
+  div1.textContent = infoList[0];
+  for (let i = 0; i < infoList[1].length; i++) {
     let div = document.createElement("div");
-    div.textContent = scpRes[1][i];
+    div.textContent = infoList[1][i];
     div2.append(div);
   }
     

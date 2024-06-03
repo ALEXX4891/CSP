@@ -72,8 +72,7 @@ for ($i = 0; $i < count($dataRes); $i++) {
 // echo '2';
 
 
-$output = exec('python test_1.py');  
-// $output = `python3.11 test_1.py 2>&1`; //вызов скрипта на хостинге!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! https://andpop.github.io/2022/04/25/shell-redirect/
+$output = `python3.11 test_1.py 2>&1`; 
 // test_1.py
 // echo '3';
 
