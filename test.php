@@ -13,8 +13,8 @@
 
 // $output = shell_exec('python C:\OSPanel\domains\test\test_1.py h'); +
 
-$inputData = '[[1150],[[140,143],[150,143],[160,286],[170,286],[180,286]]]';
-// $inputData = file_get_contents('php://input');
+// $inputData = '[[1150],[[140,143],[150,143],[160,286],[170,286],[180,286]]]';
+$inputData = file_get_contents('php://input');
 // echo $inputData;
 
 // $file = 'order.txt';
